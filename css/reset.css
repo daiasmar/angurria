@@ -1,0 +1,192 @@
+/* RESET STYLE RULES */
+*{padding: 0; margin: 0; box-sizing: border-box;}
+a, button, input{all: unset;}
+img{width: 100%;}
+table{border-collapse: collapse;}
+th,td{border: 1px solid var(--white);
+    color: var(--white);
+    padding: 5px; 
+}
+th{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* FLEX ATOMIC RULES */
+.flex{display: flex;}
+.flex__dir--col{flex-direction: column}
+.flex__dir--rowr{flex-direction: row-reverse}
+.flex__just--cen{justify-content: center}
+.flex__just--end{justify-content: flex-end}
+.flex__just--aro{justify-content: space-around}
+.flex__just--btw{justify-content: space-between}
+.flex__alig--cen{align-items: center}
+.flex__alig--end{align-items: end}
+.flex__alig--bas{align-items: baseline;}
+.flex__self--sta{align-self: flex-start}
+.flex__self--end{align-self: flex-end}
+.flex__wrap{flex-wrap: wrap;}
+
+/* GRID ATOMIC RULES */
+.grid{display: grid}
+.grid__just--cen{justify-items: center}
+
+/* POSITION ATOMIC RULES */
+.pos__abs{position: absolute}
+.pos__rel{position: relative}
+.pos__fix{position: fixed;}
+
+/* DISPLAY ATOMIC RULES*/
+.disp__none{display: none}
+.oflwX__hid{overflow-x: hidden}
+.oflw{overflow: auto;}
+.visi__hid{visibility: hidden}
+.z{z-index: 99;}
+
+/* ELEMENTS SIZE RULES*/
+.minH__100vh{min-height: 100vh}
+.H__100vh{height: 100vh}
+.minW__fit{min-width: fit-content}
+.W_100pe{width: 100%}
+.H_100pe{height: 100%}
+
+/* PADDING - GAP RULES */
+.padd__25{padding: 25px}
+.padd__50{padding: 50px}
+.gap__25{gap: 25px}
+.gap__50{gap: 50px}
+
+/* CURSOR ATOMIC RULE */
+.curs__pnt{cursor: pointer}
+
+/* FONT UPLOAD */
+@font-face {font-family: 'Plastic'; 
+    src: url(../fonts/PlasticSans.otf)
+}
+@font-face {font-family: 'Pathway Gothic One'; 
+    src: url(../fonts/PathwayGothicOne-Regular.ttf)
+}
+
+/* FONT SIZES RULES */
+.font__hdr--1{
+    font-family: 'Plastic', sans-serif;
+    font-size: 96px;
+}
+.font__hdr--2{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 36px;
+}
+.font__b{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 20px;
+}
+.font__btn{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* BUTTON STYLES RULES */
+.btn__1{
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.btn__1:hover{
+    color: var(--blue);
+    border: 2px solid var(--white);
+    background-color: var(--white);
+}
+.btn__1.btn__1--act{
+    color: var(--white);
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+}
+.inpt__1{
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 10px 15px;
+}
+::placeholder{color: rgb(200, 200, 200)}
+.btn__2{
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.btn__2:hover{
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 10px 15px;
+}
+.btn__3{
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.btn__3:hover{
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 10px 15px;
+}
+.btn__4{
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+.btn__4:hover{
+    color: var(--white);
+    border: 2px solid var(--blue);
+    background-color: var(--blue);
+}
+.list__sty{list-style: decimal inside}
+
+/* COLOR PALETTE VAR */
+:root{
+    --white: #FCFCFC;
+    --yellow: #FFE087;
+    --red: #FA4848; 
+    --blue: #20236D;
+    --black: #1D1D1D;
+}
+.c__wht{color: var(--white)}
+.c__red{color: var(--red)}
+
+/* BACKGROUND GRADIENTS */
+.vwp__grad--dinam{
+    background: radial-gradient(var(--black) 0%, 
+        var(--blue) 25%, var(--red) 100%);
+    background-size: 300% 300%;
+    animation: dinamic 20s cubic-bezier(0.62, 0.05, 
+        0.26, 0.27) infinite;
+    background-position: 0% 0%;
+}
+.vwp__grad--stat--1{background: radial-gradient(
+    100.39% 100.39% at 84.72% 16.5%, var(--yellow) 0%, 
+    var(--red) 31.45%, var(--blue) 100%);
+}
+.vwp__grad--stat--2{background: radial-gradient(
+    100% 100% at 50% 100%, var(--yellow) 0%, 
+    var(--red) 20.61%, var(--blue) 100%)
+}
+
+/* GRADIENT DINAMIC */
+@keyframes dinamic {
+    0%{background-position: 0% 0%}
+    25%{background-position: 100% 0%}
+    50%{background-position: 0% 100%}
+    75%{background-position: 100% 100%}
+    100%{background-position: 0% 0%}
+}
+
+/* DICE MOVE */
+@keyframes dice {
+    0%{transform: rotateX(0deg) rotateY(0deg)}
+    50%{transform: rotateX(540deg) rotateY(540deg)}
+    100%{transform: rotateX(0deg) rotateY(0deg)}
+}

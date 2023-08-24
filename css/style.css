@@ -1,0 +1,141 @@
+/* INDEX */
+#olay__vwp{
+    background-color: #FFE08750;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+#box__rule{
+    background: linear-gradient(var(--blue) 75%, transparent);
+    padding: 50px;
+}
+.rule{
+    width: 175px;
+}
+.rule__x{
+    width: 20px;
+}
+#box__rule.box__rule--act{
+    bottom: 100%;
+}
+#dice{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 5s;
+    animation: dice 50s linear infinite;
+    display: none;
+}
+.side__dice{
+    border: 2px solid var(--white);
+}
+.side__dice:nth-child(1){transform: translateZ(100px);}
+.side__dice:nth-child(3){transform: rotateY(90deg) translateZ(100px);}
+.side__dice:nth-child(6){transform: rotateY(-90deg) translateZ(100px);}
+.side__dice:nth-child(4){transform: rotateX(-90deg) translateZ(-100px);}
+.side__dice:nth-child(5){transform: rotateX(-90deg) translateZ(100px);}
+.side__dice:nth-child(2){transform: rotateY(-180deg) translateZ(100px);}
+
+/* PLAYERS */
+.plyrs__vwp, .game__vwp{grid-template-columns: repeat(3, 1fr);}
+.prnt__inpt{justify-content: center; align-items: center;}
+        
+/* DICES */
+.box__dices{
+    padding: 50px 50px 50px 0px;
+    gap: 150px;
+}
+#dices{
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    transition: transform 5s;
+}
+.side__dices{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding: 25px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.side__dices:nth-child(1){transform: translateZ(124px);}
+.side__dices:nth-child(3){transform: rotateY(90deg) translateZ(124px);}
+.side__dices:nth-child(6){transform: rotateY(-90deg) translateZ(124px);}
+.side__dices:nth-child(4){transform: rotateX(-90deg) translateZ(-124px);}
+.side__dices:nth-child(5){transform: rotateX(-90deg) translateZ(124px);}
+.side__dices:nth-child(2){transform: rotateY(-180deg) translateZ(124px);}
+
+.dot{
+    width: 50px;
+    height: 50px;
+    background-color: var(--black);
+    border-radius: 50px;
+}
+
+.dot__1--1{grid-area: 2/2}
+
+.dot__2--2{grid-area: 3/3}
+
+.dot__3--2{grid-area: 2/2}
+.dot__3--3{grid-area: 3/3}
+
+.dot__4--2{grid-area: 1/3}
+.dot__4--3{grid-area: 3/1}
+.dot__4--4{grid-area: 3/3}
+
+.dot__5--2{grid-area: 1/3}
+.dot__5--3{grid-area: 2/2}
+.dot__5--4{grid-area: 3/1}
+.dot__5--5{grid-area: 3/3}
+
+.dot__6--2{grid-area: 1/3}
+.dot__6--3{grid-area: 2/1}
+.dot__6--4{grid-area: 2/3}
+.dot__6--5{grid-area: 3/1}
+.dot__6--6{grid-area: 3/3}
+
+.show__1{transform: rotateX(540deg) rotateY(540deg)}
+.show__2{transform: rotateX(1260deg) rotateY(1080deg)}
+.show__3{transform: rotateX(-1980deg) rotateY(1170deg)}
+.show__4{transform: rotateX(-810deg) rotateY(-180deg)}
+.show__5{transform: rotateX(-990deg) rotateY(-1620deg)}
+.show__6{transform: rotateX(-360deg) rotateY(-630deg)}
+
+#modal__score{
+    background-color: #FFE08750;
+    top: 0;
+    left: 0;
+    justify-content: center;
+}
+#box__score{
+    background: linear-gradient(var(--blue) 75%, transparent); 
+    padding: 50px; 
+    gap: 25px;
+}
+
+
+/* MEDIA QUERY */ 
+@media screen and (max-width: 768px) {
+    /* INDEX */
+    .main__vwp.gap__25{
+        gap: 150px;
+    }
+    .main__logo{display: none;}
+    #dice{display: block;}
+    #olay__vwp{align-items: flex-start;}
+    #box__rule{padding: 25px;}
+
+    /* PLAYERS */
+    .prnt__inpt{justify-content: flex-start;}
+    .plyrs__vwp{grid-template-columns: none; grid-template-rows: 0.6fr 0.2fr 0.2fr;}
+    
+
+    /* GAME */
+    .game__vwp{grid-template-columns: none;}
+    .box__dices{
+        padding: 50px 25px 100px;
+    }
+    #modal__score{justify-content: flex-start;}
+    #box__score{flex-direction: column; align-self: flex-start; padding: 25px; gap: 25px;}
+}

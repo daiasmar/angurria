@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANGURRIA</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="media/favicon/favicon.png">
+
+</head>
+<body>
+
+    <!-- SHOWS RULES (MODAL) -->
+    <div id="olay__vwp" class="pos__fix oflw H_100pe W_100pe flex flex__just--cen padd__25 visi__hid z">
+
+        <div id="box__rule" class="box__rule--act flex flex__dir--rowr flex__just--btw gap__25">
+            <div id="btn__x" class="curs__pnt">
+                <div class="rule__x"><img src="media/svg/x.svg" alt="rules-x"></div>
+            </div>
+            <div class="flex flex__dir--col gap__25">
+                <div class="rule"><img src="media/svg/rules.svg" alt="rules-title"></div>
+                <!-- <p class="font__hdr--1 c__wht">RULES</p> -->
+                <ul class="font__b list__sty c__wht">
+                    <li>Angurria is played with two standard six-sided dice and has 10 rounds.</li>
+                    <li>Each player takes turns in each round rolling the two dice and accumulating
+                         points.</li>
+                    <li>At the beginning of each turn, the player rolls two dice and adds up the
+                         numbers to determine their score for that turn.</li>
+                    <li>The player can choose to roll the dice as many times as they want during their turn
+                        , and the sum of the two dice is added to their score each time they roll.</li>
+                    <li>However, if the player rolls a 7 during their turn, they immediately lose their
+                         turn and all the points accumulated during that turn.</li>
+                    <li>The player can choose to end their turn at any time before rolling a 7 to keep
+                         the points accumulated up to the next turn.</li>
+                    <li>The player with the most points at the end of the 10 rounds is declared the 
+                        winner.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /SHOWS RULES (MODAL) -->
+
+    <div class="vwp__grad--dinam minH__100vh">
+        
+        <div class="main__vwp flex flex__dir--col flex__just--cen flex__alig--cen minH__100vh oflwX__hid 
+        padd__50 gap__25">
+
+            <!-- LOGO -->
+            <div class="main__logo">
+                <img src="media/svg/angurria.svg" alt="angurria-word-logo">
+            </div>
+            <!-- /LOGO -->
+
+            <!-- DICE FLOATING -->
+            <div id="dice" class="pos__rel">
+                <div class="side__dice flex flex__just--cen H_100pe W_100pe pos__abs padd__50">
+                    <img src="media/svg/a.svg" alt="angurria-dice-logo">
+                </div>
+                <div class="side__dice flex flex__just--cen H_100pe W_100pe pos__abs padd__50">
+                    <img src="media/svg/a.svg" alt="angurria-dice-logo">
+                </div>
+                <div class="side__dice flex flex__just--cen H_100pe W_100pe pos__abs padd__50">
+                    <img src="media/svg/a.svg" alt="angurria-dice-logo">
+                </div>
+                <div class="side__dice flex flex__just--cen H_100pe W_100pe pos__abs padd__50">
+                    <img src="media/svg/a.svg" alt="angurria-dice-logo">
+                </div>
+                <div class="side__dice flex flex__just--cen H_100pe W_100pe pos__abs padd__50">
+                    <img src="media/svg/a.svg" alt="angurria-dice-logo">
+                </div>
+                <div class="side__dice flex flex__just--cen H_100pe W_100pe pos__abs padd__50">
+                    <img src="media/svg/a.svg" alt="angurria-dice-logo">
+                </div>
+            </div>
+            <!-- /DICE FLOATING -->
+
+            <!-- BUTTONS -->
+            <div class="flex flex__just--cen gap__50">
+                <button id="btn__rule" class="btn__1 font__btn curs__pnt">how to play</button>
+                <button id="btn__play" class="btn__1 font__btn curs__pnt">
+                    <a href="pages/players.html">let's play</a>
+                </button>
+            </div>  
+            <!-- /BUTTONS -->
+        </div>
+    </div>
+
+    <!-- SCRIPT FILE -->
+    <script src="js/modals.js"></script>
+
+</body>
+</html>

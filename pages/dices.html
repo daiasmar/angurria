@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME TO BE ANGURRIOSO</title>
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+   <!-- FAVICON -->
+   <link rel="icon" type="image/x-icon" href="../media/favicon/favicon.png">
+
+</head>
+<body>
+
+    <!-- SHOWS SCORE (MODAL) -->
+    <div id="modal__score" class="pos__fix oflw H_100pe W_100pe flex flex__alig--cen padd__25 z visi__hid">
+        <div id="box__score" class="flex">
+            <div id="btn__x" class="curs__pnt">
+                <div class="rule__x"><img src="../media/svg/x.svg" alt="score-x"></div>
+            </div>
+
+            <!-- SCORE TABLE -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Round 1</th>
+                        <th>Round 2</th>
+                        <th>Round 3</th>
+                        <th>Round 4</th>
+                        <th>Round 5</th>
+                        <th>Round 6</th>
+                        <th>Round 7</th>
+                        <th>Round 8</th>
+                        <th>Round 9</th>
+                        <th>Round 10</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="table__score"><!-- inyection JS --></tbody>
+            </table>
+            <!-- /SCORE TABLE -->
+
+            <!-- inyection JS -->
+        </div>
+    </div>
+    <!-- /SHOWS SCORE (MODAL) -->
+
+    <!-- GAME -->
+    <div class="game__vwp vwp__grad--stat--2 grid minH__100vh minW__fit">
+
+        <!-- ROUND, TURN, ROLLS INFO -->
+        <div class="flex flex__dir--col padd__25">
+            <button id="btn__score" class="btn__1 flex__self--sta font__btn curs__pnt">score</button>
+
+            <div id="prnt__round" class="flex flex__alig--bas gap__25">
+                <p id="txt__round" class="font__hdr--1 c__wht">round</p>
+                <p id="actual__round" class="font__hdr--2 c__wht"><!-- inyection JS --></p>
+            </div>
+
+            <div class="flex flex__alig--bas gap__25">
+                <p id="txt__turn" class="font__hdr--1 c__wht">turn</p>
+                <p id="actual__turn" class="font__hdr--2 c__wht"><!-- inyection JS --></p>
+            </div>
+
+            <div class="flex flex__wrap flex__alig--bas gap__25">
+                <p class="font__hdr--2 c__wht">rolls</p>
+                <div id="prnt__rolls" class="flex flex__wrap gap__25"><!-- inyection JS --></div>
+            </div>
+        </div>
+        <!-- /ROUND, TURN, ROLLS INFO -->
+
+        <!-- BUTTONS -->
+        <div class="flex flex__dir--col flex__alig--cen flex__just--cen gap__25 padd__25">
+            <button id="btn__more" class="btn__3 font__btn curs__pnt">roll dice!</button>
+            <button id="btn__next" class="btn__4 font__btn curs__pnt">next turn</button>
+        </div>
+        <!-- /BUTTONS -->
+
+        <!-- DICES BOX -->
+        <div class="box__dices flex flex__dir--col flex__just--aro flex__alig--cen">
+
+            <!-- FIRST DICE --> 
+            <div id="dices" class="pos__rel">
+                
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__1--1"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__2--1"></div>
+                    <div class="dot dot__2--2"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__3--1"></div>
+                    <div class="dot dot__3--2"></div>
+                    <div class="dot dot__3--3"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__4--1"></div>
+                    <div class="dot dot__4--2"></div>
+                    <div class="dot dot__4--3"></div>
+                    <div class="dot dot__4--4"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__5--1"></div>
+                    <div class="dot dot__5--2"></div>
+                    <div class="dot dot__5--3"></div>
+                    <div class="dot dot__5--4"></div>
+                    <div class="dot dot__5--5"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__6--1"></div>
+                    <div class="dot dot__6--2"></div>
+                    <div class="dot dot__6--3"></div>
+                    <div class="dot dot__6--4"></div>
+                    <div class="dot dot__6--5"></div>
+                    <div class="dot dot__6--6"></div>
+                </div>
+            </div>
+            <!-- /FIRST DICE -->
+
+            <!-- SECOND DICE -->
+            <div id="dices">
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__1--1"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__2--1"></div>
+                    <div class="dot dot__2--2"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__3--1"></div>
+                    <div class="dot dot__3--2"></div>
+                    <div class="dot dot__3--3"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__4--1"></div>
+                    <div class="dot dot__4--2"></div>
+                    <div class="dot dot__4--3"></div>
+                    <div class="dot dot__4--4"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__5--1"></div>
+                    <div class="dot dot__5--2"></div>
+                    <div class="dot dot__5--3"></div>
+                    <div class="dot dot__5--4"></div>
+                    <div class="dot dot__5--5"></div>
+                </div>
+
+                <div class="side__dices grid flex__alig--cen grid__just--cen H_100pe W_100pe pos__abs">
+                    <div class="dot dot__6--1"></div>
+                    <div class="dot dot__6--2"></div>
+                    <div class="dot dot__6--3"></div>
+                    <div class="dot dot__6--4"></div>
+                    <div class="dot dot__6--5"></div>
+                    <div class="dot dot__6--6"></div>
+                </div>
+            </div>
+            <!-- /SECOND DICE -->
+
+        </div>
+        <!-- /DICES BOX -->
+        
+    </div>
+    <!-- /GAME -->
+    
+    <!-- SCRIPT FILES -->
+    <script src="../js/game.js"></script>
+    <script src="../js/modals.js"></script>
+
+</body>
+</html>
