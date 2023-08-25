@@ -7,21 +7,21 @@ https://angurria.netlify.app/
 # ANGURRIA
 ![image](https://github.com/daiasmar/angurria/assets/132020985/a527c458-9191-40fe-a27f-a7af3e6bb626)
 
-Bienvenido a ANGURRIA, un emocionante juego de azar popular colombiano donde lanzarás dados y tratarás de obtener la mejor puntuación posible. ¡Que empiece la diversión!
-## Contenido
-* [Objetivo](#objetivo)
-* [Reglas del juego](#reglas-del-juego)
-* [Herramientas utilizadas](#herramientas-utilizadas)
-## Objetivo
-La palabra ‘ANGURRIA’ en Latinoamérica significa ‘avaricia’ o ‘afán de poseer muchas riquezas por el solo placer de atesorarlas sin compartirlas con nadie’,  y en base a este significado se estructura el juego. El objetivo del juego es acumular la mayor cantidad de puntos posibles y saber cuando parar de tirar los dados, aquel jugador que tenga más puntos gana el juego.
-## Reglas del juego
-1. Angurria se juega con dos dados estandar y consta de 10 rondas.
-2. En cada ronda los jugadores, por turnos, van a lanzar los dados con el objetivo de acumular la mayor cantidad de puntos.
-3. Por cada turno, los jugadores acumulan al puntaje las cantidades resultantes de haber tirado los dados.
-4. Los jugadores pueden tirar las veces que quieran el dado acumulando cada tirada al puntaje de la ronda.
-5. Si el jugador saca un 7 durante el turno, pierde todos los puntos acumulados en la ronda y pierde el turno.
-6. El jugador puede terminar su turno antes de sacar un 7 para no perder los puntos y que estos se sumen al total de puntaje.
-7. El jugador con más puntos al final de las 10 rondas será el ganador.
-## Herramientas utilizadas
+Welcome to ANGURRIA, an exciting and popular Colombian game of chance where you will roll dice and try to get the best score possible, let the fun begin!
+## Content
+* [Goal](#goal)
+* [Game Rules](#game-rules)
+* [Tools](#tools)
+## Goal
+The word 'ANGURRIA' in Latin America means 'greed' or 'eagerness to possess a lot of wealth for the sole pleasure of hoarding it without sharing it with anyone', and the game is structured around this meaning. The objective of the game is to accumulate as many points as possible and to know when to stop rolling the dice, the player with the most points wins the game.
+## Game Rules
+1. Angurria is played with two standard six-sided dice and has 10 rounds.
+2. Each player takes turns in each round rolling the two dice and accumulating points.
+3. At the beginning of each turn, the player rolls two dice and adds up the numbers to determine their score for that turn.
+4. The player can choose to roll the dice as many times as they want during their turn, and the sum of the two dice is added to their score each time they roll.
+5. However, if the player rolls a 7 during their turn, they immediately lose their turn and all the points accumulated during that turn.
+6. The player can choose to end their turn at any time before rolling a 7 to keep the points accumulated up to the next turn.
+7. The player with the most points at the end of the 10 rounds is declared the winner.
+## Tools
 - Netlify
 - JavaScript Vanilla
