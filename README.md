@@ -1,5 +1,5 @@
 ![Game](https://img.shields.io/badge/type-game-blue)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
 ![Link](https://img.shields.io/badge/link-purple)
@@ -23,5 +23,5 @@ La palabra ‘ANGURRIA’ en Latinoamérica significa ‘avaricia’ o ‘afán 
 6. El jugador puede terminar su turno antes de sacar un 7 para no perder los puntos y que estos se sumen al total de puntaje.
 7. El jugador con más puntos al final de las 10 rondas será el ganador.
 ## Herramientas utilizadas
-- Vercel
+- Netlify
 - JavaScript Vanilla
