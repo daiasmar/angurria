@@ -7,7 +7,7 @@ https://angurria.netlify.app/
 # ANGURRIA
 ![image](https://github.com/daiasmar/angurria/assets/132020985/a527c458-9191-40fe-a27f-a7af3e6bb626)
 
-Welcome to ANGURRIA, an exciting and popular Colombian game of chance where you will roll dice and try to get the best score possible, let the fun begin!
+Welcome to ANGURRIA, an exciting popular Colombian game where you will roll dices and try to get the best score possible, let the fun begin!
 ## Content
 * [Goal](#goal)
 * [Game Rules](#game-rules)
