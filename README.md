@@ -1,5 +1,6 @@
 https://angurria.netlify.app/
 # ANGURRIA
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 Bienvenido a ANGURRIA, un emocionante juego de azar popular colombiano donde lanzarás dados y tratarás de obtener la mejor puntuación posible. ¡Que empiece la diversión!
 ## Contenido
 * [Objetivo](#objetivo)
