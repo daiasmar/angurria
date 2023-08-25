@@ -2,9 +2,9 @@ https://angurria.netlify.app/
 # ANGURRIA
 Bienvenido a ANGURRIA, un emocionante juego de azar popular colombiano donde lanzarás dados y tratarás de obtener la mejor puntuación posible. ¡Que empiece la diversión!
 ## Contenido
-*[Objetivo](#objetivo)
-*[Reglas del juego](#reglas-del-juego)
-*[Herramientas utilizadas](#herramientas-utilizadas)
+* [Objetivo](#objetivo)
+* [Reglas del juego](#reglas-del-juego)
+* [Herramientas utilizadas](#herramientas-utilizadas)
 ## Objetivo
 La palabra ‘ANGURRIA’ en Latinoamérica significa ‘avaricia’ o ‘afán de poseer muchas riquezas por el solo placer de atesorarlas sin compartirlas con nadie’,  y en base a este significado se estructura el juego. El objetivo del juego es acumular la mayor cantidad de puntos posibles y saber cuando parar de tirar los dados, aquel jugador que tenga más puntos gana el juego.
 ## Reglas del juego
