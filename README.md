@@ -5,6 +5,7 @@
 ![Link](https://img.shields.io/badge/link-purple)
 https://angurria.netlify.app/
 # ANGURRIA
+
 Bienvenido a ANGURRIA, un emocionante juego de azar popular colombiano donde lanzarás dados y tratarás de obtener la mejor puntuación posible. ¡Que empiece la diversión!
 ## Contenido
 * [Objetivo](#objetivo)
